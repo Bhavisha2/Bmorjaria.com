@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmorjaria.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p id="live-clock">Loading time...</p>
+
+    <section id="home">
+        <h1>Welcome to My Porfolio</h1>
+        <p id="greeting"></p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="b.JPG" alt="Bmorjaria" height="100px" width="80px">
+        <p></p>
+    </section>
+    
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <select id="portfolio-filter">
+            <option value="All">All</option>
+            <option value="Web">Web</option>
+            <option value="AI">AI</option>
+            <option value="Data">Data</option>
+        </select>
+        <div id="portfolio-gallery"></div>
+    </section>
+    
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Project Image">
+    </div>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="project-filters">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('web')">Web</button>
+            <button onclick="filterProjects('data')">Data</button>
+            <button onclick="filterProjects('ai')">AI</button>
+        </div>
+        <div id="project-list"></div>
+    </section>
+    
+    <section id="blog">
+        <h2>Blog</h2>
+        <div id="blog-list"></div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+        <button id="theme-toggle">Toggle Theme</button>
+    </footer>
+</body>
+</html>
